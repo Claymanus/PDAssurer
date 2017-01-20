@@ -12,10 +12,10 @@ and we will do everything we can to alleviate them, and make it easy for you to 
 Anyway, here is what we have done to install the software in our server.
 - install an ubuntu server
 - install all the packages mentioned in the debs_needed file
-- check out the software from github (we do it to /usr/local/PDOauth):
+- check out the software from github (we do it to /usr/local/PDAssurer):
   cd /usr/local ; git clone https://github.com/edemo/PDOauth.git
 - install python dependencies:
-  cd /usr/local/PDOauth; do sudo pip install -r requirements.txt
+  cd /usr/local/PDAssurer; do sudo pip install -r requirements.txt
 - set up a postgres database (actually you can use all major ones, we just happen to like postgres the best)
 - create a facebook application for facebook login
 - setup an ssl certificate for your CA, and another for your web site. We recommend to use different ones:
@@ -23,7 +23,7 @@ Anyway, here is what we have done to install the software in our server.
   much money in the CA cert, which is just there because the trust model of X509 is sadly broken.
 - create a config file. We use /etc/pdoauth/config.py for this. You can find an example for src/end2entests/config.py
 - configure your apache. The important parts are found in end2endtest/apache2.conf
-  One important thing is the wsgi python path. it should contain /usr/local/PDOauth/src, and /etc/pdoauth.
+  One important thing is the wsgi python path. it should contain /usr/local/PDAssurer/src, and /etc/pdassurer.
 
 The URL to the hash anchor is wired in into static/script.js probably you want to install your own hash anchor and change it.
 

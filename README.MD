@@ -1,8 +1,7 @@
-This is the SSO server for the Anonymous Assurance Provider
+PDAssurer
+This is the Assurer application for PDOauth service
 
-It is an OAuth provider, which utilizes a one-directional hash created by PDAnchor to uniquely identify persons.
-It also have support for an assurance program.
-Users with an appropriate privilege can attach assurances to other users.
-There is also an 'emailverification' assurance, which can be obtained by verifying one's own email address.
+Main features:
+.it manages the assurence giving process
 
-For documentation, see http://edemo.github.io/PDOauth/
+For documentation, see http://edemo.github.io/PDAssurer/
